@@ -86,6 +86,7 @@ const HomeScreen = () => {
           <View>
             {/*Destination // Место назначения*/}
             <Pressable
+            onPress={() => navigation.navigate("Search")}
               style={{
                 flexDirection: "row",
                 alignItems: "center",
