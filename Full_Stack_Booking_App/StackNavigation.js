@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./screens/HomeScreen";
 import SavedScreens from "./screens/SavedScreen";
+import PlacesScreen from "./screens/PlacesScreen";
 import BookingScreen from "./screens/BookingScreen";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
@@ -84,6 +85,7 @@ const StackNavigation = () => {
       <Stack.Navigator>
         <Stack.Screen name="Main" component={bottomTabs}  options={{headerShown: false}}/>
         <Stack.Screen name="Search" component={SearchScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Places" component={PlacesScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
