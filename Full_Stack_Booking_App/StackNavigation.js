@@ -11,6 +11,8 @@ import { Entypo } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import ProfileScreen from "./screens/ProfileScreen";
 import SearchScreen from "./screens/SearchScreen";
+import PropertyInfoScreen from "./screens/PropertyInfoScreen";
+import MapScreen from "./screens/MapScreen";
 import { NavigationContainer } from '@react-navigation/native';
 
 const StackNavigation = () => {
@@ -86,6 +88,8 @@ const StackNavigation = () => {
         <Stack.Screen name="Main" component={bottomTabs}  options={{headerShown: false}}/>
         <Stack.Screen name="Search" component={SearchScreen} options={{headerShown: false}}/>
         <Stack.Screen name="Places" component={PlacesScreen}/>
+        <Stack.Screen name="Map" component={MapScreen} options={{headerShown:false}}/>
+        <Stack.Screen name="Info" component={PropertyInfoScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -37,4 +37,4 @@ const SearchResults = ({data,input,setInput}) => {
 
 export default SearchResults
 
-const styles = StyleSheet.create({}) 
+const styles = StyleSheet.create({})
