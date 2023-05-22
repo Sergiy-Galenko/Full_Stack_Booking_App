@@ -147,4 +147,5 @@ import {
   
   export default PropertyCard;
   
+  
   const styles = StyleSheet.create({});
