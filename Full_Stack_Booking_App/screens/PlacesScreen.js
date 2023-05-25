@@ -4,7 +4,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { Octicons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
-import PropertyCard from "../componens/PropertyCard";
+import PropertyCard from "../components/PropertyCard";
 import { BottomModal } from "react-native-modals";
 import { ModalFooter } from "react-native-modals";
 import { SlideAnimation } from "react-native-modals";
@@ -12,6 +12,8 @@ import { ModalTitle } from "react-native-modals";
 import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from "@expo/vector-icons";
 import { ModalContent } from "react-native-modals";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
 
 const PlacesScreen = () => {
   const route = useRoute();

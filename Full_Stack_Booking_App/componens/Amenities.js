@@ -51,7 +51,9 @@ const Amenities = () => {
             }}
             key={index}
           >
-            <Text style={{textAlign:"center",color:"white"}}>{item.name}</Text>
+            <Text style={{ textAlign: "center", color: "white" }}>
+              {item.name}
+            </Text>
           </View>
         ))}
       </View>

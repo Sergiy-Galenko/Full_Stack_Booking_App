@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { ModalPortal } from 'react-native-modals';
-import StackNavigation from './StackNavigation';
+import { createSlice } from "@reduxjs/toolkit";
 
-export default function App() {
-  return (
-    <>
-    <StackNavigation/>
-    <ModalPortal />
-    </>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
+export const SavedSlice = createSlice({
+    name:"booking",
+    initialState:{
+        booking:[],
+    },
+    reducers:{
+        savedPlaces:(state,action) => {
+            state.booking.push({...action.payload})
+        }
+    }
 });
+
+
+export const {savedPlaces} = SavedSlice.actions
+
+export default SavedSlice.reducer

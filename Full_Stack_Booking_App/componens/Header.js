@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, Pressable } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5 } from "@expo/vector-icons";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
           flexDirection: "row",
           alignItems: "center",
           borderColor: "white",
-          borderWidth: 1 ,
+          borderWidth: 1,
           borderRadius: 25,
           padding: 8,
         }}

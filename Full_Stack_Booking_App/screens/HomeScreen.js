@@ -12,7 +12,7 @@ import {
 import React, { useLayoutEffect, useState } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
-import Header from "../componens/Header";
+import Header from "../components/Header";
 import { Feather } from "@expo/vector-icons";
 import DatePicker from "react-native-date-ranges";
 import { BottomModal } from "react-native-modals";
