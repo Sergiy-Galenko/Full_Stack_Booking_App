@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, ScrollView, Pressable } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { AntDesign, Entypo } from "@expo/vector-icons";
-import Amenities from "../components/Amenities";
+import Amenities from "../componens/Amenities";
 const RoomsScreen = () => {
   const route = useRoute();
   console.log(route.params);

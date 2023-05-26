@@ -9,9 +9,9 @@ import {
 } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { pixelNormalize } from "../components/Normalise";
+import { pixelNormalize } from "../componens/Normalise";
 import { MaterialIcons } from "@expo/vector-icons";
-import Amenities from "../components/Amenities";
+import Amenities from "../componens/Amenities";
 
 const PropertyInfoScreen = () => {
   const route = useRoute();
